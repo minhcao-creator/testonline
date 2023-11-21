@@ -1,0 +1,50 @@
+.inputOption {
+    border-radius: 7px;
+    padding: 9px 5px;
+    padding-left: 10px;
+    border: 1px solid #f0eeed;
+    background-color: #f0eeed;
+    font-size: 16px;
+    margin-bottom: 5px;
+
+}
+
+.inputOption:focus {
+    border: 1px solid #f0eeed;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Thiết lập kiểu cho checkbox tùy chỉnh */
+.custom-checkbox {
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 1px solid #54bab9;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Thiết lập kiểu cho checkbox tùy chỉnh khi checked */
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #54bab9; /* Màu nền khi checked */
+    border-color: #54bab9; /* Màu đường viền khi checked */
+}
+
+/* Tạo kiểu cho "tick" (dấu tích) khi checkbox checked */
+input[type="checkbox"]:checked + .custom-checkbox::before {
+    content: '\2713'; /* Dấu tích Unicode */
+    font-size: 16px;
+    color: #fff; /* Màu của dấu tích khi checked */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,36 @@
+.content {
+    background-color: #f8f9fc;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-top {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.dashboard-left {
+    border-color: cadetblue;
+    box-shadow: 0 0 6px #b7b7b7;
+    width: 680px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.dashboard-bottom {
+    margin-top: 50px;
+    flex-grow: 4;
+}
+
+.dashboard-title h4 {
+    font-weight: 600;
+    color: black;
+    margin: 0px 0px 20px 20px;
+}
